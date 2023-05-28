@@ -156,7 +156,7 @@
 </form>
 
   
-<div class="table-header">
+<div class="table-row">
     <div class="table-cell">Date</div>
     <div class="table-cell">Des</div>
     <div class="table-cell">Db Ac</div>
