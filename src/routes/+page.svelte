@@ -98,6 +98,28 @@
       flex: 1;
       padding: 0.5em;
     }
+
+    .table-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.table-header .table-cell {
+  margin: 0.5em 0;
+}
+
+@media (min-width: 768px) {
+  .table-header {
+    flex-direction: row;
+  }
+
+  .table-header .table-cell {
+    flex: 1;
+    margin: 0;
+  }
+}
+
   </style>
 
 
@@ -154,7 +176,7 @@
 </form>
 
   
-  <div class="table-row">
+<div class="table-header">
     <div class="table-cell">Date</div>
     <div class="table-cell">Description</div>
     <div class="table-cell">Debit Account</div>
@@ -163,6 +185,7 @@
     <div class="table-cell">Credit Amount</div>
     <div class="table-cell">Actions</div>
   </div>
+  
   
   {#each entries as entry (entry.id)}
     <div class="table-row">
