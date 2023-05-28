@@ -163,7 +163,7 @@
     <div class="table-cell">Cr Ac</div>
     <div class="table-cell">Db</div>
     <div class="table-cell">Cr</div>
-   
+    <div class="table-cell">Action</div>
   </div>
   
   
