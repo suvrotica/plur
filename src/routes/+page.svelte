@@ -156,15 +156,7 @@
 </form>
 
   
-<div class="table-row">
-    <div class="table-cell">Date</div>
-    <div class="table-cell">Des</div>
-    <div class="table-cell">Db Ac</div>
-    <div class="table-cell">Cr Ac</div>
-    <div class="table-cell">Db</div>
-    <div class="table-cell">Cr</div>
-    <div class="table-cell">Action</div>
-  </div>
+
   
   
   {#each entries as entry (entry.id)}
