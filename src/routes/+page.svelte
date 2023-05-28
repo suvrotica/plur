@@ -90,14 +90,6 @@
     .form-group {
       margin-bottom: 1em;
     }
-    .table-row {
-      display: flex;
-      justify-content: space-between;
-    }
-    .table-cell {
-      flex: 1;
-      padding: 0.5em;
-    }
 
     
   </style>
@@ -156,23 +148,34 @@
 </form>
 
   
-
-  
-  
-  {#each entries as entry (entry.id)}
-    <div class="table-row">
-      <div class="table-cell">{entry.date}</div>
-      <div class="table-cell">{entry.description}</div>
-      <div class="table-cell">{entry.debitAccount}</div>
-      <div class="table-cell">{entry.creditAccount}</div>
-      <div class="table-cell">{entry.debitAmount}</div>
-      <div class="table-cell">{entry.creditAmount}</div>
-      <div class="table-cell">
-        <button on:click={() => editEntry(entry)}>Edit</button>
-      </div>
-    </div>
-  {/each}
-  
+<table role="grid">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Description</th>
+        <th scope="col">Debit Account</th>
+        <th scope="col">Credit Account</th>
+        <th scope="col">Debit Amount</th>
+        <th scope="col">Credit Amount</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {#each entries as entry (entry.id)}
+        <tr>
+          <th scope="row">{entry.date}</th>
+          <td>{entry.description}</td>
+          <td>{entry.debitAccount}</td>
+          <td>{entry.creditAccount}</td>
+          <td>{entry.debitAmount}</td>
+          <td>{entry.creditAmount}</td>
+          <td>
+            <button on:click={() => editEntry(entry)}>Edit</button>
+          </td>
+        </tr>
+      {/each}
+    </tbody>
+  </table>
   
   
  
