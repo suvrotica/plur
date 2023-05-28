@@ -99,27 +99,7 @@
       padding: 0.5em;
     }
 
-    .table-header {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1em;
-}
-
-.table-header .table-cell {
-  margin: 0.5em 0;
-}
-
-@media (min-width: 768px) {
-  .table-header {
-    flex-direction: row;
-  }
-
-  .table-header .table-cell {
-    flex: 1;
-    margin: 0;
-  }
-}
-
+    
   </style>
 
 
@@ -178,12 +158,12 @@
   
 <div class="table-header">
     <div class="table-cell">Date</div>
-    <div class="table-cell">Description</div>
-    <div class="table-cell">Debit Account</div>
-    <div class="table-cell">Credit Account</div>
-    <div class="table-cell">Debit Amount</div>
-    <div class="table-cell">Credit Amount</div>
-    <div class="table-cell">Actions</div>
+    <div class="table-cell">Des</div>
+    <div class="table-cell">Db Ac</div>
+    <div class="table-cell">Cr Ac</div>
+    <div class="table-cell">Db</div>
+    <div class="table-cell">Cr</div>
+   
   </div>
   
   
